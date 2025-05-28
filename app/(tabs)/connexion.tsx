@@ -3,8 +3,15 @@ import {Button, Input} from "tamagui";
 import {SafeAreaView} from "react-native-safe-area-context";
 import {Controller, useForm} from "react-hook-form";
 import {Text} from "react-native";
+import axios from '@/scripts/axiosConfig'; // Ajustez le chemin selon votre structure de fichiers
+
+
+import * as SecureStore from "expo-secure-store";
+import {useRouter} from "expo-router";
 
 export default function ConnexionScreen() {
+
+    const router = useRouter();
 
     type FormData = {
         email: string
@@ -17,13 +24,17 @@ export default function ConnexionScreen() {
         formState: {errors},
     } = useForm<FormData>({
         defaultValues: {
-            email: "",
-            password: "",
+            email: "a@a.com",
+            password: "root",
         },
     })
 
-    const onFormulaireValide = (data: FormData) => {
-        console.log(data)
+    const onFormulaireValide = (donneesFormulaire: FormData) => {
+        axios.post('connexion', donneesFormulaire)
+            .then(reponse => {
+                SecureStore.setItem("token" , reponse.data)
+                router.replace("/")
+            })
     }
 
     return (
@@ -66,6 +77,11 @@ export default function ConnexionScreen() {
                 )}
                 name="password"
             />
+
+            {errors.password?.type === "required" &&
+                <Text style={{color:'red'}}>
+                    Le mot de passe est obligatoire
+                </Text>}
 
             <Button size="$3" themeInverse onPress={handleSubmit(onFormulaireValide)} >
                 Connexion

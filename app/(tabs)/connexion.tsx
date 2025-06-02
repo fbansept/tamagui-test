@@ -30,6 +30,20 @@ export default function ConnexionScreen() {
     })
 
     const onFormulaireValide = (donneesFormulaire: FormData) => {
+
+        // const options : RequestInit = {
+        //     method : "POST",
+        //     headers: {"Content-type": "application/json"},
+        //     body: JSON.stringify(data)
+        // }
+        //
+        // fetch(process.env.EXPO_PUBLIC_API_URL + "connexion", options)
+        //     .then(reponse => reponse.text())
+        //     .then(jwt => {
+        //         SecureStore.setItem("token" , jwt)
+        //         router.replace("/")
+        //     })
+
         axios.post('connexion', donneesFormulaire)
             .then(reponse => {
                 SecureStore.setItem("token" , reponse.data)

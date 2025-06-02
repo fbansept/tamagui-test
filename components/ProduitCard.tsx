@@ -9,7 +9,7 @@ export function ProduitCard(props: CardProps & {produit: Produit}) {
             </Card.Header>
             <Card.Footer padded>
                 <XStack flex={1} />
-                <Button borderRadius="$10">Voir les détails</Button>
+                <Button borderRadius="$10">Voir les détails !</Button>
             </Card.Footer>
             <Card.Background>
                 <Image

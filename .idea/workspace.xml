@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc15b00b-079f-473a-ba2a-812efa5be90c" name="Changes" comment="add request">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ProduitCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/etat.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/produit.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/produit/[produit].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/connexion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/connexion.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(tabs)/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/axiosConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/axiosConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProduitCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProduitCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +21,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "fbansept"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/fbansept/tamagui-test.git",
+    "accountId": "114b7f9c-e59a-42e0-b360-eb831de30f4a"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2xiIGMZ8mtdq7AMZmgKXg209MnM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -32,11 +44,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/neofr/OneDrive/Documents/cours/javascript/react native/live-coding/tamagui-test/models",
+    "last_opened_file_path": "C:/Users/neofr/OneDrive/Documents/cours/javascript/react native/live-coding/tamagui-test/app/(tabs)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,9 +62,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\neofr\OneDrive\Documents\cours\javascript\react native\live-coding\tamagui-test\app\(tabs)" />
       <recent name="C:\Users\neofr\OneDrive\Documents\cours\javascript\react native\live-coding\tamagui-test\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neofr\OneDrive\Documents\cours\javascript\react native\live-coding\tamagui-test\app\produit" />
+      <recent name="C:\Users\neofr\OneDrive\Documents\cours\javascript\react native\live-coding\tamagui-test\app" />
       <recent name="C:\Users\neofr\OneDrive\Documents\cours\javascript\react native\live-coding\tamagui-test\scripts" />
     </key>
   </component>
@@ -72,6 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748414370414</updated>
       <workItem from="1748414374017" duration="20686000" />
+      <workItem from="1748846567216" duration="10220000" />
     </task>
     <task id="LOCAL-00001" summary="add request">
       <option name="closed" value="true" />
@@ -81,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748436025658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add request">
+      <option name="closed" value="true" />
+      <created>1748846590416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748846590416</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

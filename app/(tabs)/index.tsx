@@ -7,6 +7,7 @@ import {useEffect, useState} from "react";
 import axios from "@/scripts/axiosConfig";
 import {ProduitCard} from "@/components/ProduitCard";
 import {YStack} from "tamagui";
+import {router} from "expo-router";
 
 export default function HomeScreen() {
 
@@ -18,6 +19,9 @@ export default function HomeScreen() {
                 setProduits(reponse.data)
             })
     }, []);
+
+    const onPressProduit = (id: number) =>
+        router.push(`/produit/${id}`)
 
   return (
     <ParallaxScrollView
@@ -33,6 +37,7 @@ export default function HomeScreen() {
           {produits.map(produit => (
 
               <ProduitCard key={produit.id}
+                  onPress={() => onPressProduit(produit.id)}
                   produit={produit}
                   animation="bouncy"
                   size="$4"

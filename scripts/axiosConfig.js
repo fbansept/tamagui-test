@@ -1,6 +1,9 @@
 import axios from 'axios';
 import * as SecureStore from "expo-secure-store";
 
+console.log(process.env.EXPO_PUBLIC_API_URL)
+
+
 const instance = axios.create({
     baseURL: process.env.EXPO_PUBLIC_API_URL,
     timeout: 1000,
@@ -10,8 +13,8 @@ const instance = axios.create({
 instance.interceptors.request.use(
     async config => {
         // Récupérer le token depuis AsyncStorage
-        const token = await SecureStore.getItem('token');
-
+        const token = SecureStore.getItem('token');
+        console.log(token)
         // Si le token existe, l'ajouter à l'en-tête de la requête
         if (token) {
             config.headers.Authorization = `Bearer ${token}`;
